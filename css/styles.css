@@ -1,0 +1,420 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: rgb(237, 247, 232);
+}
+h1, h2, h3, h4 {
+    color: #ffffff;
+}
+
+p {
+    color: #495057;
+}
+
+/* Header */
+
+
+header {
+    background-image: url('../img/head.jpg.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: #fff;
+}
+
+header h1 {
+    text-align: left;
+    margin: 0;
+    font-size: 2.5rem;
+   
+}
+
+header a.btn {
+    background-color: #38a169;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+header a.btn:hover {
+    background-color: #2d6a4f;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgb(237, 247, 232);
+    border-bottom: 4px solid #4CAF50; /* Accent border */
+}
+
+.navbar img {
+    height: 50px;
+    width: auto;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #2c6e49;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar ul li a.active {
+    border-bottom: 2px solid #2c6e49;
+}
+
+
+.auth-links a {
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+
+.btn-outline {
+    background-color: red;
+    border: 2px solid #fff;
+    color: white;
+}
+
+
+.btn-success {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+/* Main Content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgb(237, 247, 232);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    color: #2d6a4f;
+}
+
+/* Plant Cards */
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: #1b4332;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #495057;
+}
+
+/* Buttons */
+.btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #2c6e49; /* Dark green background */
+    color: white; /* Set default text color to white */
+    padding: 3rem 1.5rem; /* Increased padding */
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    border-top: 4px solid #4CAF50; /* Accent border */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Stack rows vertically */
+    align-items: center; /* Center align content */
+    gap: 2rem; /* Add spacing between rows */
+}
+
+.footer-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Evenly space out items */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer-section {
+    flex: 1; /* Equal width sections */
+    min-width: 200px; /* Prevent sections from shrinking too much */
+    text-align: left; /* Align text to left */
+    color: white; /* Ensure text is white */
+}
+
+.footer-section h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid #4CAF50; /* Accent underline */
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin: 0.5rem 0;
+}
+
+.footer-section.contact p {
+    margin: 0.5rem 0; /* Match the gap between lines with other sections */
+    line-height: 1.6; /* Ensure proper readability */
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+    color: #4CAF50; /* Green hover effect */
+}
+
+.footer-opening-hours {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: white; /* Ensure opening hours text is white */
+}
+
+.footer-follow h4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.footer-follow h4::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #4CAF50; /* Lime underline */
+    margin: 0.5rem auto 0; /* Center underline */
+}
+
+.footer-follow .social-icons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-follow .social-icons a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.footer-follow .social-icons a img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: #2c6e49; 
+    
+    font-size: 0.85rem;
+    margin-top: 2rem;
+    border-top: 2px solid #4CAF50;
+}
+
+.footer-section.contact p,
+.footer-opening-hours p,
+.footer-section.about p,
+.footer-bottom p {
+    color: white !important; /* Force text to white */
+}
+
+.footer-section.contact p a {
+    color: #32CD32; /* Lime color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Optional: make it bold for better visibility */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer-section.contact p a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #28a745; /* Slightly darker lime color for hover effect */
+}
+
+.social-icons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 1rem;
+}
+
+/* General Styling for Navbar Icons */
+.auth-links {
+    display: flex;
+    align-items: center;
+    gap: 50px; /* Spacing between icons */
+}
+
+
+
+.icon-container:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+.icon {
+    width: 35px !important;
+    height: 35px !important;
+}
+
+/* Profile dropdown container */
+.profile-dropdown {
+    position: relative; /* For dropdown positioning */
+    display: inline-block;
+}
+
+#profile-icon {
+    cursor: pointer; /* Makes the icon clickable */
+}
+
+.dropdown-menu {
+    display: none; /* Initially hide the dropdown */
+    position: absolute;
+    top: 50px; /* Position below the profile icon */
+    right: 0; /* Align to the right edge */
+    background-color: #fff;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    z-index: 100; /* Ensure it's above other elements */
+    min-width: 150px; /* Minimum width */
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #333; /* Text color */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1; /* Highlight on hover */
+}
+
+/* Show dropdown when parent has 'open' class */
+.profile-dropdown.open .dropdown-menu {
+    display: block;
+}
+
+.welcome-message {
+    font-size: 1rem;
+    color: #333; /* Matches the dropdown text */
+    margin-right: 10px; /* Add spacing before the profile icon */
+    font-weight: 500; /* Slightly bold for emphasis */
+}
+
+
+.icon-container {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Circular background */
+    width: 40px; /* Size of container */
+    height: 40px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.badge {
+    position: absolute;
+    top: -8px; /* Adjusted to ensure the badge sits above the icon */
+    right: -8px; /* Adjusted for proper alignment */
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 20px; /* Set a consistent width */
+    height: 20px; /* Set a consistent height */
+    font-size: 0.75rem; /* Slightly smaller font */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for aesthetics */
+}
+
+.wishlist-badge {
+    top: -8px; /* Matches the cart badge's position */
+    right: -8px; /* Ensures consistency with the cart badge */
+}
+
+.cart-badge {
+    top: -8px; /* Matches the wishlist badge's position */
+    right: -8px; /* Ensures consistency with the wishlist badge */
+}
