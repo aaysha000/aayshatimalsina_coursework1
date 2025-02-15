@@ -1,8 +1,8 @@
 <?php
 require 'db.php'; // Include your database connection
 
-// Set timezone to Australia/Sydney
-date_default_timezone_set('Australia/Sydney');
+// Set timezone to Asia/Kathmandu
+date_default_timezone_set('Asia/Kathmandu');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $token = $_POST['token'];
